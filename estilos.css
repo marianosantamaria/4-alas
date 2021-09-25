@@ -1,12 +1,55 @@
+:root{
+    /*las variables guardan valores en la memoria del navegador,esto
+    me permite reutilzay ordenar mejor el codigo*/
+
+    /*esto es declarar las variables y asignar un valor*/
+    --naranja:#ff9900;
+    --negro:#000;
+    --blanco:#fff;
+
+}
+
+
+
+
 body
-{background-image: url('images/pattern.jpg');}
+{background-image: url('images/pattern.jpg');
+background-color: #27262b;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*repetir imagen de fondo?
+    background-repeat
+        repeat: repetir en X y en Y (predeterminado)
+        repeat-x:Eje X
+        repeat-Y:Eje Y
+        no- repeat: no repite nada se queda en la esq sup iz
+
+
+*/
 
 .cabecera,
 .wrap{
+    display: flex;
     max-width: 1000px;
     margin: auto;
+    
 }
-
+.cabecera h1{
+    color: var(--naranja);
+    font-size: 24px;
+    
+}
+.cabecera{
+   
+    display: flex;
+    justify-content: space-between;/*separa en el eje X*/
+    align-items: center;/*alinea en el eje Y*/
+    padding: bottom 8px; ;
+}
 .wrap{
-    background-color: white;
+
+    /*utilzar la variable previamente declarada*/
+    background-color: var(--blanco);
 }
