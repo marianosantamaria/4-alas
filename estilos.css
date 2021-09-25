@@ -1,0 +1,12 @@
+body
+{background-image: url('images/pattern.jpg');}
+
+.cabecera,
+.wrap{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.wrap{
+    background-color: white;
+}
