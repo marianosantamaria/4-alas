@@ -31,7 +31,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .cabecera,
 .wrap{
-    display: flex;
+   
     max-width: 1000px;
     margin: auto;
     
@@ -52,4 +52,9 @@ font-family: Arial, Helvetica, sans-serif;
 
     /*utilzar la variable previamente declarada*/
     background-color: var(--blanco);
+    border-radius: 8px 8px 0 0;
+}
+.nav{
+    background-color: var(--naranja);
+    border-radius: 8px 8px 0 0;
 }
