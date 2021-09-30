@@ -133,7 +133,7 @@ PRINCIPAL
 
 
 .principal {
-    background-color: chocolate;
+    
     display: grid;
     grid-template-columns: 280px 1fr;
     gap:20px;
@@ -165,5 +165,47 @@ PRODUCTOS
 
 */
 .productos {
-    background-color: darkorange;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
+
+
+/* Solución 3, con un div adicional */
+.lampara-titulo {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+.lampara-info {
+    display: flex;
+    align-items: flex-start;
+}
+.lampara-imagen {
+    margin-right: 20px;
+}
+​
+/* Solución 2, con un div adicional
+.lampara-titulo {
+    margin-bottom: 20px;
+}
+.lampara-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+*/
+/*
+Solución 1 para un HTML simple
+.lampara {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+​
+.lampara-titulo {
+    Este elemento ocupa todas las columnas de su fila
+    grid-column: 1 / -1;
+}
+*/
